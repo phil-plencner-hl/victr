@@ -1,0 +1,16 @@
+     <div class="container container-detail">
+        <div class="row row-content" ng-repeat="repo in repositories">
+              <div class="col-xs-12">
+                    <div class="media-body">
+                        <h2 class="media-heading"><a href="{{repo.url}}">{{repo.name}}</a></h2>
+                        <span>({{repo.id}})</span>
+                        <span class="badge">{{repo.stargazers_count}} <i class="fa fa-star-o" aria-hidden="true"></i></span></h2>
+                        <p><strong>Created: </strong>{{repo.created_at}}</p>
+                        <p><strong>Last Push: </strong>{{repo.pushed_at}}</p>
+                        <p>{{repo.description}}</p>
+                    </div>
+            </div>        
+       </div>
+
+    </div>
+				  

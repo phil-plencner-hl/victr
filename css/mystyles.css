@@ -1,0 +1,11 @@
+.container-home .row-content {
+	border: 1px solid #eee;
+	padding: 1em;
+}
+.repo-id, .repo-name, .repo-url, .repo-stargazers  {
+	text-align: center;
+}
+
+.repo-name {
+	font-weight: bold;
+}

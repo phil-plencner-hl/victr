@@ -1,0 +1,30 @@
+ <div class="container container-home">
+    <div class="row row-content">
+            <div class="col-xs-12 col-sm-2">
+            <h4 align="center">ID</h4>
+        </div>        
+        <div class="col-xs-12 col-sm-offset-1 col-sm-2">
+            <h4 align="center">Name</h4>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-3">
+            <h4 align="center">URL</h4>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-2">
+            <h4 align="center">Stars</h4>
+        </div>
+    </div>
+    <div class="row row-content" ng-repeat="repo in repositories">
+            <div class="col-xs-12 col-sm-2">
+            <p class="repo-id"> <a ui-sref="app.repodetails({id: repo.id})">{{ repo.id }}</a></p>
+        </div>        
+        <div class="col-xs-12 col-sm-offset-1 col-sm-2">
+            <p class="repo-name">{{ repo.name }}</p>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-3">
+            <p class="repo-url"><a href="{{ repo.url }}" target="_new">{{ repo.url }}</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-2">
+            <p class="repo-stargazers">{{ repo.stargazers_count }} <i class="fa fa-star-o" aria-hidden="true"></i></p>
+        </div>
+    </div>
+</div>
